@@ -1,0 +1,55 @@
+
+.message-wrapper{
+  border: 2px solid #49454d;
+  border-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 12px;
+  height: 65vh;
+  overflow: auto;
+}
+.message{
+  padding: 10px;
+  border-bottom: 1px solid #49454d;
+}
+.message .message-nickname{
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.message .message-text{
+  color: #49454d;
+  font-size: 1.3rem;
+}
+.send-messages-wrapper {
+  height: 25vh;
+  padding: 20px;
+  border: 2px solid #49454d;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.send-messages-input {
+  width: 126%;
+  border: 2px solid #49454d;
+  border-radius: 5px;
+  resize: none;
+  height: 60%;
+}
+.send-messages-input2{
+  width: 100%;
+  border: 2px solid #49454d;
+  border-radius: 5px;
+  resize: none;
+  height: 60%;
+}
+.send-messages-button {
+  height: 85%;
+  width: 205%;
+  padding-bottom: 10px;
+  padding-left: 96%;
+  display: flex;
+  align-items: center;
+}
