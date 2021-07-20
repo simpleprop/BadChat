@@ -1,12 +1,21 @@
+var messages = document.getElementById('messages');
+
 // Шаг 1:
 // Получить сообщение с сервера
 async function getMessageFromServer(){
   // Получаем ассинхророваный ответ
   var response = await fetch('https://fchatiavi.herokuapp.com/get/Nickus/?offset0&limit=10');
   // Декодируем это из строки в JS
-  response = response.json();
+  response = await response.json();
 
-  console.log(response);
+  var message = '
+  <div class="message">
+    <div class="message-nickname"> Name </div>
+    <div class="message-text"> Message </div>
+  </div>
+  ';
+
+  messages.innerHTML = message;
 }
 // Создать верстку меседжа
 // Добавить в message-wrapper письма
