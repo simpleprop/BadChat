@@ -4,7 +4,7 @@ var messages = document.getElementById('messages');
 // Получить сообщение с сервера
 async function getMessageFromServer(){
   // Получаем ассинхророваный ответ
-  var response = await fetch('https://fchatiavi.herokuapp.com/get/Nickus/?offset0&limit=10');
+  var response = await fetch('https://fchatiavi.herokuapp.com/send/Nickus/?offset0&limit=10');
   // Декодируем это из строки в JS
   response = await response.json();
 
