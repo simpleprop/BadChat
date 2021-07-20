@@ -8,12 +8,13 @@ async function getMessageFromServer(){
   // Декодируем это из строки в JS
   response = await response.json();
 
-  var message = '
+  var message = `
   <div class="message">
     <div class="message-nickname"> Name </div>
     <div class="message-text"> Message </div>
   </div>
-  ';
+  `
+  ;
 
   messages.innerHTML = message;
 }
